@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERCO INNOVATIONS - Affordable Solar Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">⚡ ENERCO INNOVATIONS</div>
+            <ul class="nav-links">
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#services" onclick="showSection('services')">Services</a></li>
+                <li><a href="#careers" onclick="showSection('careers')">Careers</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="content-section">
+        <section class="hero">
+            <h1>Power Your Future with Solar</h1>
+            <p>Affordable solar panel solutions with flexible installment plans</p>
+            <button class="btn btn-primary" onclick="showSection('contact')">Get a Quote</button>
+            <button class="btn btn-secondary" onclick="showSection('services')">Learn More</button>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Why Choose ENERCO?</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Flexible Installments</h3>
+                    <p>Pay for your solar panels in easy monthly installments. No upfront costs, start saving from day one.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Reduce your carbon footprint and contribute to a sustainable future with clean, renewable energy.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Expert Installation</h3>
+                    <p>Our certified technicians ensure seamless installation and ongoing maintenance support.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stats">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h2>5,000+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h2>12MW</h2>
+                    <p>Energy Generated</p>
+                </div>
+                <div class="stat-item">
+                    <h2>8,000t</h2>
+                    <p>CO₂ Saved</p>
+                </div>
+                <div class="stat-item">
+                    <h2>15yrs</h2>
+                    <p>Industry Experience</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="about" class="content-section" style="display:none;">
+        <section class="section">
+            <h2 class="section-title">About ENERCO INNOVATIONS</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>To make solar energy accessible and affordable for everyone through innovative financing solutions and exceptional service.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Vision</h3>
+                    <p>A world powered by clean, renewable energy where every home and business can afford to go solar.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Values</h3>
+                    <p>Innovation, sustainability, customer satisfaction, and integrity in everything we do.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="services" class="content-section" style="display:none;">
+        <section class="section">
+            <h2 class="section-title">Our Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🏠</div>
+                    <h3>Residential Solar</h3>
+                    <p>Complete solar solutions for homes with customized designs to maximize energy production and savings.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Commercial Solar</h3>
+                    <p>Large-scale solar installations for businesses looking to reduce operational costs and carbon footprint.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💳</div>
+                    <h3>Flexible Financing</h3>
+                    <p>Multiple installment plans tailored to your budget. 12, 24, or 36-month payment options available.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔧</div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Comprehensive maintenance packages and 24/7 customer support to keep your system running optimally.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="careers" class="content-section" style="display:none;">
+        <section class="section jobs-container active">
+            <h2 class="section-title">Join Our Team</h2>
+            <p style="text-align:center; margin-bottom:3rem; color:#6b7280;">Be part of the renewable energy revolution. Explore exciting career opportunities at ENERCO INNOVATIONS.</p>
+            
+            <div class="job-filters">
+                <button class="filter-btn active" onclick="filterJobs('all')">All Positions</button>
+                <button class="filter-btn" onclick="filterJobs('technical')">Technical</button>
+                <button class="filter-btn" onclick="filterJobs('sales')">Sales</button>
+                <button class="filter-btn" onclick="filterJobs('admin')">Administrative</button>
+            </div>
+
+            <div id="jobListings"></div>
+        </section>
+    </div>
+
+    <div id="contact" class="content-section" style="display:none;">
+        <section class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+            </form>
+            <div style="text-align:center; margin-top:3rem;">
+                <p><strong>Email:</strong> info@enerco-innovations.com</p>
+                <p><strong>Phone:</strong> +233 XX XXX XXXX</p>
+                <p><strong>Address:</strong> Taifa, Greater Accra, Ghana</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="jobModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalJobDetails"></div>
+        </div>
+    </div>
+
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeApplicationModal()">&times;</span>
+            <h2 style="margin-bottom:2rem;">Apply for Position</h2>
+            <form onsubmit="handleApplicationSubmit(event)">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone *</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>Resume/CV *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label>Cover Letter</label>
+                    <textarea rows="5" placeholder="Tell us why you're a great fit..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Years of Experience</label>
+                    <select>
+                        <option>0-1 years</option>
+                        <option>1-3 years</option>
+                        <option>3-5 years</option>
+                        <option>5-10 years</option>
+                        <option>10+ years</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>ENERCO INNOVATIONS</h3>
+            <p>Powering a sustainable future, one installation at a time.</p>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">🐦</a>
+                <a href="#">📷</a>
+                <a href="#">💼</a>
+            </div>
+            <p style="margin-top:2rem;">&copy; 2024 ENERCO INNOVATIONS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
