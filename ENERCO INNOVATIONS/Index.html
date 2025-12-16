@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERCO INNOVATIONS - Take Control of Your Power Supply</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">⚡ ENERCO INNOVATIONS</div>
+            <ul class="nav-links">
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#services" onclick="showSection('services')">Services</a></li>
+                <li><a href="#careers" onclick="showSection('careers')">Careers</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="content-section">
+        <section class="hero-video">
+            <video autoplay muted loop playsinline class="hero-bg-video">
+                <source src="solar-energy-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Take Control of Your Power Supply</h1>
+                <p>We make it possible with our reliable solar systems, affordable pricing, and easy payment plan!</p>
+                <button class="btn btn-primary" onclick="showSection('contact')">Get Started</button>
+                <button class="btn btn-secondary" onclick="showSection('services')">View Packages</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Why Choose Enerco?</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">💳</div>
+                    <h3>Flexible Payment Plan - No Down Payment</h3>
+                    <p>Pay for your solar system in easy daily installment amounts spread over 12 months. Simply pay through your dedicated customer account at Lotus Bank. No upfront cost, no collateral. Power your business for as little as ₦2,200 daily.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Reliable System - Expert Installation</h3>
+                    <p>Get high-quality, long-lasting components you can count on, installed by our certified technicians, who ensure a seamless installation and provide ongoing monitoring and maintenance support.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Eco-friendly - Sustainable Power Generation</h3>
+                    <p>Reduce your carbon footprint and contribute to a sustainable future with clean, renewable energy. Avoid the air and noise pollution that comes with gasoline/diesel generators. Leave a safer world for future generations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stats">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h2>50+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h2>50MW+</h2>
+                    <p>Green Energy Generated</p>
+                </div>
+                <div class="stat-item">
+                    <h2>2×10⁶L</h2>
+                    <p>Diesel Equivalent Avoided</p>
+                </div>
+                <div class="stat-item">
+                    <h2>8mT</h2>
+                    <p>CO₂ Equivalent Displaced</p>
+                </div>
+                <div class="stat-item">
+                    <h2>96dB</h2>
+                    <p>Ambient Noise Reduced</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section what-we-offer">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="offer-grid">
+                <div class="offer-item">
+                    <span class="offer-icon">🔋</span>
+                    <p>24/7 uninterrupted power supply</p>
+                </div>
+                <div class="offer-item">
+                    <span class="offer-icon">✅</span>
+                    <p>5-year warranty</p>
+                </div>
+                <div class="offer-item">
+                    <span class="offer-icon">📊</span>
+                    <p>Modular and scalable system</p>
+                </div>
+                <div class="offer-item">
+                    <span class="offer-icon">💰</span>
+                    <p>Flexible funding options</p>
+                </div>
+                <div class="offer-item">
+                    <span class="offer-icon">🔇</span>
+                    <p>Clean, stable, and noiseless electricity generation</p>
+                </div>
+                <div class="offer-item">
+                    <span class="offer-icon">🛠️</span>
+                    <p>Active After-Sales support</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="about" class="content-section" style="display:none;">
+        <section class="section">
+            <h2 class="section-title">About Enerco Innovations</h2>
+            
+            <div class="about-section">
+                <h3>How It Started, and Why</h3>
+                <p>Enerco Innovations was born from a vision to transform Nigeria's energy landscape, making reliable and sustainable power accessible to every small business.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>What We Want to Achieve</h3>
+                    <p>We envision a future where Nigeria's economic landscape is powered by a decentralized, dependable, and clean energy grid, enabling small businesses to thrive and contribute to a healthier planet.</p>
+                </div>
+                <div class="card">
+                    <h3>How We Will Achieve It</h3>
+                    <p>To make sustainable energy accessible to every small business in Nigeria by acting as a trusted partner, providing flexible financing for reliable solutions, and managing the entire process from start to finish.</p>
+                </div>
+            </div>
+
+            <div class="values-section">
+                <h3 class="section-title">What We Stand For</h3>
+                <div class="grid">
+                    <div class="card value-card">
+                        <h3>Integrity and Trust</h3>
+                        <p>We build relationships on a foundation of honesty and transparency, always acting with the highest integrity to earn the trust of our customers, partners, and team.</p>
+                    </div>
+                    <div class="card value-card">
+                        <h3>Inclusion and Community</h3>
+                        <p>We are committed to fostering equity by providing accessible energy solutions for everyone. We believe in the power of community and strive to create a more prosperous future where all businesses have the opportunity to succeed.</p>
+                    </div>
+                    <div class="card value-card">
+                        <h3>Innovation and Impact</h3>
+                        <p>We relentlessly pursue innovative solutions that deliver tangible results. Our purpose is to create a positive impact by empowering our customers to grow while contributing to a cleaner, more sustainable environment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h3 class="section-title">The Incredible Team Behind It All</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">👤</div>
+                        <h4>Hartwell Ayambiliko</h4>
+                        <p class="team-role">Chief Executive Officer, CEO and Co-founder</p>
+                        <p class="team-bio">Visionary leader driving Enerco's mission to revolutionize Nigeria's energy sector with sustainable solutions.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">👤</div>
+                        <h4>Ernest Ezeh</h4>
+                        <p class="team-role">Chief Operations Officer, COO and Co-founder</p>
+                        <p class="team-bio">Operations expert ensuring seamless delivery of solar solutions to businesses across Nigeria.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">👤</div>
+                        <h4>Mmanuella Cann</h4>
+                        <p class="team-role">Chief Financial Officer, CFO</p>
+                        <p class="team-bio">Financial strategist making solar energy accessible through innovative financing solutions.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">👤</div>
+                        <h4>Future Yintii</h4>
+                        <p class="team-role">Chief Technology Officer, CTO</p>
+                        <p class="team-bio">Technology innovator optimizing solar systems for maximum efficiency and reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="services" class="content-section" style="display:none;">
+        <section class="section">
+            <h2 class="section-title">Our Services</h2>
+            
+            <div class="services-intro">
+                <p style="text-align:center; font-size:1.2rem; margin-bottom:3rem; color:#4b5563;">
+                    We provide complete solar power generation systems that include:
+                </p>
+                <div class="components-grid">
+                    <div class="component-item">
+                        <span class="component-icon">☀️</span>
+                        <h4>Monocrystalline Solar Panels</h4>
+                    </div>
+                    <div class="component-item">
+                        <span class="component-icon">🔌</span>
+                        <h4>Hybrid Inverters</h4>
+                    </div>
+                    <div class="component-item">
+                        <span class="component-icon">🔋</span>
+                        <h4>Batteries</h4>
+                    </div>
+                </div>
+                <p style="text-align:center; font-size:1.1rem; margin:3rem 0 2rem; color:#4b5563;">
+                    Our packages also include:
+                </p>
+                <div class="includes-list">
+                    <div class="include-item">✓ Installation accessories</div>
+                    <div class="include-item">✓ Installation cost (Service fees)</div>
+                </div>
+            </div>
+
+            <div class="package-section">
+                <h3 class="section-title" style="margin-top:4rem;">Standard Package for MSMEs</h3>
+                <div class="package-card">
+                    <div class="package-price">
+                        <span class="currency">₦</span>
+                        <span class="amount">880,000</span>
+                    </div>
+                    <h4 style="text-align:center; margin:2rem 0; color:#10b981; font-size:1.3rem;">Package Includes:</h4>
+                    
+                    <div class="package-components">
+                        <div class="package-item">
+                            <strong>☀️ Solar Panel:</strong> 300W Monocrystalline Solar Panel × 1
+                        </div>
+                        <div class="package-item">
+                            <strong>🔌 Inverter:</strong> 1.5kVA Hybrid Inverter × 1
+                        </div>
+                        <div class="package-item">
+                            <strong>🔋 Battery:</strong> 220Ah Tubular Battery × 1
+                        </div>
+                    </div>
+
+                    <h4 style="margin:2rem 0 1rem; color:#f59e0b;">System Specifications:</h4>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <div class="spec-label">Daily Energy Generation</div>
+                            <div class="spec-value">1.35 kWh</div>
+                            <div class="spec-desc">Maximum power appliances can draw at one time</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Maximum Instantaneous Load</div>
+                            <div class="spec-value">1.2 kW</div>
+                            <div class="spec-desc">Total energy produced on an average day</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Total Energy Storage</div>
+                            <div class="spec-value">2.64 kWh</div>
+                            <div class="spec-desc">Total energy available from battery bank</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Storage Autonomy</div>
+                            <div class="spec-value">1.76 days</div>
+                            <div class="spec-desc">Battery runtime without sunlight on full charge</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" style="width:100%; margin-top:2rem; padding:1.2rem;" onclick="showSection('contact')">
+                        Get This Package
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="careers" class="content-section" style="display:none;">
+        <section class="section jobs-container active">
+            <h2 class="section-title">Join Our Team</h2>
+            <p style="text-align:center; margin-bottom:3rem; color:#6b7280;">Be part of the renewable energy revolution. Explore exciting career opportunities at ENERCO INNOVATIONS.</p>
+            
+            <div class="job-filters">
+                <button class="filter-btn active" onclick="filterJobs('all')">All Positions</button>
+                <button class="filter-btn" onclick="filterJobs('technical')">Technical</button>
+                <button class="filter-btn" onclick="filterJobs('sales')">Sales</button>
+                <button class="filter-btn" onclick="filterJobs('admin')">Administrative</button>
+            </div>
+
+            <div id="jobListings"></div>
+        </section>
+    </div>
+
+    <div id="contact" class="content-section" style="display:none;">
+        <section class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+            </form>
+            <div style="text-align:center; margin-top:3rem;">
+                <p><strong>Email:</strong> info@enerco-innovations.com</p>
+                <p><strong>Phone:</strong> +234 XXX XXX XXXX</p>
+                <p><strong>Address:</strong> Nigeria</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="jobModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalJobDetails"></div>
+        </div>
+    </div>
+
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeApplicationModal()">&times;</span>
+            <h2 style="margin-bottom:2rem;">Apply for Position</h2>
+            <form onsubmit="handleApplicationSubmit(event)">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone *</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>Resume/CV *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label>Cover Letter</label>
+                    <textarea rows="5" placeholder="Tell us why you're a great fit..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Years of Experience</label>
+                    <select>
+                        <option>0-1 years</option>
+                        <option>1-3 years</option>
+                        <option>3-5 years</option>
+                        <option>5-10 years</option>
+                        <option>10+ years</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Enerco Innovations Limited</h3>
+            <p>Powering a sustainable future, one installation at a time!</p>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Sitemap</h4>
+                    <a href="#home" onclick="showSection('home')">Home</a>
+                    <a href="#about" onclick="showSection('about')">About</a>
+                    <a href="#services" onclick="showSection('services')">Services</a>
+                    <a href="#careers" onclick="showSection('careers')">Careers</a>
+                    <a href="#contact" onclick="showSection('contact')">Contact</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>📧 info@enerco-innovations.com</p>
+                    <p>📍 Nigeria</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Notice</a>
+                    <a href="#data-access">Data Access Request Policy</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+            </div>
+            
+            <p style="margin-top:2rem;">&copy; 2024 Enerco Innovations Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
